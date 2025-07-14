@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>nok</title>
+  <link rel="stylesheet" href="nok.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body>
+ <div class="nok">
+
+  <h2>กรุณาใส่ชื่อของคุณ:</h2>
+  
+  <!-- ช่อง input -->
+  <input type="text" id="nameInput" placeholder="พิมพ์ชื่อที่นี่">
+  
+  <!-- ปุ่ม -->
+  <button onclick="showName()" class="o">คลิกเพื่อแสดง</button>
+  
+  <!-- ตรงนี้ไว้แสดงผล -->
+  <p id="result" class="noo"></p>
+</div>
+
+  <script>
+    function showName() {
+      
+      const name = document.getElementById("nameInput").value;
+
+      
+      if (name.trim() !== "") {
+        document.getElementById("result").innerText = name  + "เป็นฮิปโปแคระ" + "!";
+      } else {
+        alert("ชื่อคับไอ้หลอน");
+      }
+    }
+  </script>
+
+</body>
+</html>

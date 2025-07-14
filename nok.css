@@ -1,0 +1,26 @@
+body {
+    text-align: center;
+    background-color: rgb(255, 192, 241);
+}
+
+.nok {
+    border: 2px solid black;
+    background-color: rgb(250, 211, 217);
+    text-align: center;
+    margin: 0 auto;
+    width: 90%;
+    max-width: 600px;
+    max-height: max-content;
+}
+.o {
+    border-radius: 10px;
+}
+@media (max-width:480px;){
+    .nok {
+        font-size: 10px;
+    }
+    .noo {
+        font-weight: 100;
+    }
+
+}
